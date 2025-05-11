@@ -18,19 +18,38 @@
             align-items: center;
             min-height: 100vh;
             background: linear-gradient(135deg, #fff0f5, #e6f3ff);
-            overflow: hidden;
+            overflow: auto;
+            padding: 10px;
         }
 
         .card {
             background: rgba(255, 255, 255, 0.93);
-            border-radius: 30px;
+            border-radius: 20px;
             box-shadow: 0 15px 60px rgba(0, 0, 0, 0.3);
             max-width: 750px;
-            width: 90%;
-            padding: 50px;
+            width: 100%;
+            max-height: 85vh;
+            padding: 30px;
             text-align: center;
             position: relative;
-            overflow: hidden;
+            overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+            scrollbar-color: #ffb6c1 #f0f0f0;
+        }
+
+        .card::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .card::-webkit-scrollbar-track {
+            background: #f0f0f0;
+            border-radius: 10px;
+        }
+
+        .card::-webkit-scrollbar-thumb {
+            background: #ffb6c1;
+            border-radius: 10px;
         }
 
         .card::before {
@@ -42,45 +61,47 @@
             height: 260%;
             background: radial-gradient(circle, rgba(255, 245, 238, 0.4), transparent);
             transform: rotate(20deg);
+            z-index: -1;
         }
 
         .card img {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 30px auto;
-            border: 8px solid #ffb6c1;
+            margin: 20px auto;
+            border: 6px solid #ffb6c1;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
         }
 
         .card h1 {
-            font-size: 2.8em;
+            font-size: 2.5em;
             color: #2a2a2a;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             text-transform: capitalize;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
         }
 
         .shayari {
-            font-size: 1.3em;
-            line-height: 2;
+            font-size: 1.2em;
+            line-height: 1.8;
             color: #333;
-            margin: 30px 0;
+            margin: 20px 0;
             font-style: italic;
             font-weight: 500;
         }
 
         .signature {
-            font-size: 1.2em;
+            font-size: 1.1em;
             color: #555;
-            margin-top: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             font-weight: bold;
         }
 
         .heart {
             position: absolute;
-            font-size: 2.5em;
+            font-size: 2em;
             color: #ff6666;
             opacity: 0.5;
             animation: float 4s ease-in-out infinite;
@@ -93,26 +114,72 @@
 
         @keyframes float {
             0%, 100% { transform: translateY(0); opacity: 0.5; }
-            50% { transform: translateY(-15px); opacity: 0.7; }
+            50% { transform: translateY(-10px); opacity: 0.7; }
         }
 
-        @media (max-width: 480px) {
+        /* Mobile Responsive Styles */
+        @media (max-width: 600px) {
             .card {
-                padding: 30px;
-            }
-
-            .card h1 {
-                font-size: 2.2em;
-            }
-
-            .shayari {
-                font-size: 1.1em;
-                line-height: 1.8;
+                padding: 20px;
+                max-height: 90vh;
+                border-radius: 15px;
             }
 
             .card img {
-                width: 150px;
-                height: 150px;
+                width: 120px;
+                height: 120px;
+                border-width: 4px;
+                margin: 15px auto;
+            }
+
+            .card h1 {
+                font-size: 1.8em;
+                margin-bottom: 15px;
+                letter-spacing: 1px;
+            }
+
+            .shayari {
+                font-size: 1em;
+                line-height: 1.6;
+                margin: 15px 0;
+            }
+
+            .signature {
+                font-size: 0.9em;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .heart {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .card {
+                padding: 15px;
+            }
+
+            .card img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .card h1 {
+                font-size: 1.5em;
+            }
+
+            .shayari {
+                font-size: 0.9em;
+                line-height: 1.5;
+            }
+
+            .signature {
+                font-size: 0.8em;
+            }
+
+            .heart {
+                font-size: 1.2em;
             }
         }
     </style>
@@ -143,7 +210,7 @@
             Not just today, but all year through,<br>
             I cherish the maa I found in you. 💖
         </div>
-        <div class="signature">Anwar</div>
+        <div class="signature">Anwar </div>
         <span class="heart">♥</span>
         <span class="heart">♥</span>
         <span class="heart">♥</span>
