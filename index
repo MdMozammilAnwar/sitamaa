@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother's Day Shayari for Sita Maa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fff0f5, #e6f3ff);
+            overflow: hidden;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.93);
+            border-radius: 30px;
+            box-shadow: 0 15px 60px rgba(0, 0, 0, 0.3);
+            max-width: 750px;
+            width: 90%;
+            padding: 50px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -80%;
+            left: -80%;
+            width: 260%;
+            height: 260%;
+            background: radial-gradient(circle, rgba(255, 245, 238, 0.4), transparent);
+            transform: rotate(20deg);
+        }
+
+        .card img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 30px auto;
+            border: 8px solid #ffb6c1;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h1 {
+            font-size: 2.8em;
+            color: #2a2a2a;
+            margin-bottom: 30px;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+        }
+
+        .shayari {
+            font-size: 1.3em;
+            line-height: 2;
+            color: #333;
+            margin: 30px 0;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .signature {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 2.5em;
+            color: #ff6666;
+            opacity: 0.5;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .heart:nth-child(1) { top: 5%; left: 5%; }
+        .heart:nth-child(2) { top: 10%; right: 5%; }
+        .heart:nth-child(3) { bottom: 5%; left: 10%; }
+        .heart:nth-child(4) { bottom: 5%; right: 10%; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); opacity: 0.5; }
+            50% { transform: translateY(-15px); opacity: 0.7; }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 30px;
+            }
+
+            .card h1 {
+                font-size: 2.2em;
+            }
+
+            .shayari {
+                font-size: 1.1em;
+                line-height: 1.8;
+            }
+
+            .card img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://mlxx5g6byupz.i.optimole.com/cb:Dext.20d6a/w:598/h:800/q:75/sm:0/f:avif/https://uexcelerate.com/wp-content/uploads/2020/08/leadership-images-1_Sita-ravantula-copy.webp" alt="Sita Maa">
+        <h1>Mother's Day for Sita Maa</h1>
+        <div class="shayari">
+            In a world so vast, I searched for light,<br>
+            A guiding soul through darkest night.<br>
+            And there you stood—so calm, so wise,<br>
+            With motherly grace and caring eyes.<br><br>
+            You weren’t just a mentor sent by fate,<br>
+            But like a mother, so warm and great.<br>
+            In moments low, when hope was thin,<br>
+            You lit the fire of strength within.<br><br>
+            You scolded like a mother would,<br>
+            To shape me strong, to make me good.<br>
+            And when I stumbled, you held my hand,<br>
+            Taught me gently how to stand.<br><br>
+            So on this Mother’s Day I say with pride,<br>
+            I see a mother in you by my side.<br>
+            No blood binds us, but hearts still do,<br>
+            Dear Sita Maa, I believe in you.<br><br>
+            With deep respect and endless grace,<br>
+            You have a sacred, eternal place.<br>
+            Not just today, but all year through,<br>
+            I cherish the maa I found in you. 💖
+        </div>
+        <div class="signature">Anwar</div>
+        <span class="heart">♥</span>
+        <span class="heart">♥</span>
+        <span class="heart">♥</span>
+        <span class="heart">♥</span>
+    </div>
+</body>
+</html>
